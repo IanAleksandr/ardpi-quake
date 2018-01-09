@@ -17,12 +17,13 @@ git remote add origin hhttps://github
 //push
 git push -u origin master
 
-pull request
+pull request (origin-->github)
 ------------
 git status
 git add.
 git commit -m'asd'
-git remote add origin <url_repositorio_github>
+git remote add github <url_repositorio_github>
+git push -u github master
 
 pull request
 ------------
