@@ -1,0 +1,28 @@
+para instalar mysql formato zip
+
+extraer en el disco que se requiere
+cambiar el nombre a mysql-5.7.20
+crear folder 'data' y folder 'temp'
+crear archivo my.init
+
+http://webdevzoom.com/install-mysql-zip-file-on-windows/
+
+dentro de my.ini poner
+
+explicit_defaults_for_timestamp = 1
+
+probamos la conexion de mysql
+d:mysql/bin> mysqld
+
+instalamos el driver de mysql para Node
+
+entramos al cmd
+npm install mysql
+(si manda error: enoent no such file pacage.json)
+ npm config set strict-ssl false
+ npm install -g npm@latest
+ npm install mysql
+ https://stackoverflow.com/questions/31952747/npm-throws-enoent-warnings-on-every-install-uninstall-ls
+ entras al directorio de tu proyecto
+npm init  (para crear el package.json)
+npm install mysql

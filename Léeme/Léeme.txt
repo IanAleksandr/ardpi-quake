@@ -1,0 +1,17 @@
+POST HTTP
+
+POST envía datos a un URI específico y espera que el recurso en ese URI maneje la solicitud. El servidor web en este punto puede determinar qué hacer con los datos en el contexto del recurso especificado. El método POST no es idempotente, sin embargo, las respuestas POST son almacenables en caché siempre que el servidor establezca los encabezados Cache-Control y Expires apropiados.
+
+El HTTP oficial RFC especifica que POST sea:
+
+Anotación de recursos existentes;
+Publicar un mensaje en un tablero de anuncios, un grupo de noticias, una lista de correo o un grupo similar de artículos;
+Proporcionar un bloque de datos, como el resultado de enviar un formulario, a un proceso de manejo de datos;
+Extender una base de datos a través de una operación de agregar.
+-----------------------------------------------------------------
+
+Se supone que HTTP PUT acepta el cuerpo de la solicitud y luego lo almacena en el recurso identificado por el URI.
+
+Un HTTP POST es más general. Se supone que debe iniciar una acción en el servidor. Esa acción podría ser almacenar el cuerpo de la solicitud en el recurso identificado por el URI, o podría ser un URI diferente, o podría ser una acción diferente.
+
+PUT es como una carga de archivo. Un PUT a un URI afecta exactamente ese URI. Un POST a un URI podría tener algún efecto en todo.

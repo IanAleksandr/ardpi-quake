@@ -11,6 +11,7 @@ function iniciar (route,handle)
 		var pathname = url.parse(request.url).pathname;
 		console.log("Peticion para " + pathname + " recibida.");
 
+		//la codificacion de la informacion recibida sera UTF8
 		request.setEncoding("utf8");
 
 		/*
@@ -32,7 +33,7 @@ function iniciar (route,handle)
     		// de informacion (data) han sido recibidos.
 		}); 
 		*/
-
+		//llamamos al router una vez que toda la inf haya sido recibida
 		request.addListener("end", function()
 		{
 			route(handle, pathname, response, postData);

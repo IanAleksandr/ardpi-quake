@@ -1,0 +1,28 @@
+Para crear reporsitorio:
+entras al git bash.
+entras al directorio del repo que deseas subir.
+
+//dir
+pwd
+//listado
+ls
+//creamos un repositorio vacio
+git init
+//enviamos al reporsitorio local los archivos
+git add .
+//para meterlos al reporsitorio git
+git commit -m 'commit creacion repo'
+//lo subimos al github-asociamos al repositorio remoto
+git remote add origin hhttps://github
+//push
+git push -u origin master
+
+pull request
+------------
+git status
+git add.
+git commit -m'asd'
+git push origin master
+
+entras al la pag y le haces una compracion
+para hacer el pull request
