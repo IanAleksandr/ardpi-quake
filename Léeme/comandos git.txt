@@ -22,6 +22,13 @@ pull request
 git status
 git add.
 git commit -m'asd'
+git remote add origin <url_repositorio_github>
+
+pull request
+------------
+git status
+git add.
+git commit -m'asd'
 git push origin master
 
 entras al la pag y le haces una compracion
