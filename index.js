@@ -1,6 +1,6 @@
 var server = require ("./server");
 var router = require ("./router");
-var requestHandlers = require ("./requestHandlers");
+var requestHandlers = require ("./Controllers/requestHandlers");
 //var views = require ("./views");
 
 //creamos un objeto ( nombre = valor)

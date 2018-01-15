@@ -51,7 +51,7 @@ function verHtml(response,postData)
 {
     console.log("Manipulador de peticion 'verHtml' ha sido llamado.");
     //leemos la pagina html ( se manda toda la pag a memoria)
-    fs.readFile('./vistaHtml.html',function (err, data)
+    fs.readFile('./Views/vistaHtml.html',function (err, data)
     {
         response.writeHead(200, {'Content-Type': 'text/html','Content-Length':data.length});
         response.write(data);
@@ -65,7 +65,7 @@ function verPipeHtml(response,postData)
     //leemos la pagina html usando el metodo pipe sin mandar toda la pag a memoria
     
     response.writeHead(200, {'Content-Type': 'text/html'});
-    var file = fs.createReadStream('./vistaHtml.html');
+    var file = fs.createReadStream('./Views/vistaHtml.html');
     file.pipe(response);
     // no se pone end ya que es un pipe 
     //response.end();

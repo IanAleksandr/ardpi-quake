@@ -34,3 +34,9 @@ git push origin master
 
 entras al la pag y le haces una compracion
 para hacer el pull request
+
+para eliminar archivos de un repositorio
+-----------------------------------
+git rm -r --cached node_modules
+Luego tendrás que hacer un commit para que esos cambios se apliquen al sistema de control de versiones.
+git commit -m 'Eliminada carpeta node_modules del repo'
